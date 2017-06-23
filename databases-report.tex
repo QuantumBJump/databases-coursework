@@ -18,8 +18,20 @@
 \section*{Executive Summary}
 This report details the steps taken to analyse a dataset of NHS prescriptions in January and February 2016.
 \tableofcontents
+
 \chapter{Introduction}
-Lorem ipsum dolor sit amet etc etc etc
+In this report I will be downloading a dataset from the NHS website which keeps track of information about UK GP practices, their numbers of patients, the chemicals they prescribed, and the prescriptions they gave out in the period of January and February 2016.
+
+I will import this data into a MySQL database and use SQL queries to answer the following questions:
+\begin{enumerate}
+    \item How many practices and patients are registered in the N17 postcode?
+    \item Which practice prescribed the most beta blockers per registered patient in total over the two months?
+    \item Which was the most prescribed medication across all practices?
+    \item Which practice spent the most and least per patient?
+    \item What was the difference in selective serotonin reuptake inhibitor prescriptions between January and February?
+    \item Visualise the top 10 practices by number of metformin prescriptions throughout the entire period.
+\end{enumerate}
+
 \chapter{Setting up the Database}
 
 In order to set up the database I downloaded the XAMPP database utility \cite{xampp} so I could use its shell program to run MySQL on my computer. I set up XAMPP and my own user account (in order for some of the commands to work properly I needed to use the \texttt{mysqladmin.exe -u root password [password]} command to set a root password and then \texttt{mysql -u root -p} to log in using that password.
