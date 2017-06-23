@@ -240,7 +240,7 @@ Colecalciferol & 280495 \\
 \end{center}
 
 \paragraph{Conclusion}
-The most prescribed drug across all practices in January \& February 2016 was Colecalciferol - Colecalciferol is a form of Vitamin D, which implies that England has terrible weather, meaning that many people are unable to get sufficient sunlight and thus suffer Vitamin D deficiencies.
+The most prescribed drug across all practices in January \& February 2016 was Colecalciferol.
 
 \section{Question 4: Which practice spent the most and least per patient?}
 \paragraph{Interpretation}
@@ -480,6 +480,57 @@ The \texttt{chem subs} file was also badly formatted. As far as I could tell, it
 If I was doing this project again, I would probably avoid combining multiple month's csv files into a single table, as it made it a lot harder by adding duplicates of what should have been the unique IDs of rows. On the other hand, combining multiple files into one table made it much easier to answer most of the questions without having to access multiple tables. 
 
 \chapter{Conclusions}
+In this report I used SQL queries to answer the following questions about an NHS database of GP practices, registered patients, chemicals and prescriptions from January and February 2016:
+\begin{center}
+    \textbf{Q:} How many practices and patients are registered in the N17 postcode?
+    
+    \textbf{A:} There are 7 practices in the N17 postal area, with a total of  52,248 patients registered between them.
+    \\~\\
+    \textbf{Q:} Which practice prescribed the most beta blockers per registered patient in total over the two months?
+    
+    \textbf{A:} The practice which prescribed the most beta-blockers per patient was burrswood nursing home. This seems to be because there is only one registered patient at burrswood nursing home.
+    \\~\\
+    \textbf{Q:} Which was the most prescribed medication across all practices?
+    
+    \textbf{A:} The most prescribed drug across all practices in January \& February 2016 was Colecalciferol.
+    \\~\\
+    \textbf{Q:} Which practice spent the most and least per patient? 
+    
+    \textbf{A:} The practice which spent most per patient was Burrswood Nursing Home, and the one which spent the least was School Lane PMS Practice. Burrswood turns up once again because it has only one patient.
+    \\~\\
+    \textbf{Q:} What was the difference in selective serotonin reuptake inhibitor prescriptions between January and February?
+    
+    \textbf{A:} 16,892 fewer SSRIs were prescribed in February 2016 than in January 2016.
+    \clearpage
+    \textbf{Q:} Visualise the top 10 practices by number of metformin prescriptions throughout the entire period.
+    
+    \textbf{A:} 
+    \begin{tabular}{ | c | c | }
+    \hline
+    Practice Name & Metformin Prescribed \\
+    \hline
+    Midlands Medical Partnership & 3192 \\
+    \hline
+    Lakeside Healthcare & 2848 \\
+    \hline
+    Spinney Hill Medical Centre & 2810 \\
+    \hline
+    The Shrewsbury Centre & 2739 \\
+    \hline
+    Beacon Medical Practice & 2652 \\
+    \hline
+    Marisco Medical Practice & 2545 \\
+    \hline
+    Vida Healthcare & 2264 \\
+    \hline
+    Harford Health Centre & 2183 \\
+    \hline
+    Portsdown Group Practice & 2108 \\
+    \hline
+    Coastal Medical Group & 2083 \\
+    \hline
+    \end{tabular}
+\end{center}
 
 \addcontentsline{toc}{chapter}{Code Listings}
 \listoflistings
