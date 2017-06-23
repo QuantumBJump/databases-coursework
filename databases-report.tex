@@ -461,6 +461,11 @@ Coastal Medical Group & 2083 \\
 \end{center}
 
 \chapter{Observations on the Dataset}
+Firstly, I think this dataset was quite messy, and required a significant amount of cleaning. The \texttt{address} file did not have any column titles, which meant some guesswork was required to decide what to name the columns in the table.
+
+The \texttt{chem subs} file was also badly formatted. As far as I could tell, it was designed to have three columns, \texttt{CHEM\_SUB}, \texttt{NAME} and \texttt{PERIOD}, to keep track of the chemical's ID, name, and the month in which the record was being kept. However, only \texttt{CHEM\_SUB} and \texttt{NAME} were actually in the file. Where the \texttt{PERIOD} header should have been it instead said the month, which should have been in the fields rather than the column name. The fields themselves, meanwhile, were all empty.
+
+If I was doing this project again, I would probably avoid combining multiple month's csv files into a single table, as it made it a lot harder by adding duplicates of what should have been the unique IDs of rows. On the other hand, combining multiple files into one table made it much easier to answer most of the questions without having to access multiple tables. 
 
 \chapter{Conclusions}
 
