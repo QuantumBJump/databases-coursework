@@ -46,7 +46,7 @@ I decided to combine the data from January and February together, which left me 
 \subsection{Chems table}
 For \texttt{chems}, the csv files were not set up in a way which allowed easy import, as they had three columns, but the third column wasn't named properly and wasn't populated. The three columns I made in my version of the table were \texttt{chem\_sub}, \texttt{name} and \texttt{period}, to keep track of the chemical's unique ID, name, and the month the entry was from respectively. I set this up with the following command:
 
-\begin{listing}{h}
+\begin{listing}[H]
 \begin{minted}{sql}
 CREATE TABLE chems(Chem_Sub VARCHAR(255), Name VARCHAR(255), Period INT);
 \end{minted}
